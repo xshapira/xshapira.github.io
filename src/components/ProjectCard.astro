@@ -1,20 +1,20 @@
 ---
-import { Image } from 'astro:assets'
-import type { ImageMetadata } from 'astro'
-import { cn } from '@/utils'
+import { Image } from "astro:assets";
+import { cn } from "@/utils";
+import type { ImageMetadata } from "astro";
 
 const {
-	as: Tag = 'a',
-	class: className,
-	href,
-	heading,
-	subheading,
-	imagePath,
-	altText
-} = Astro.props
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
+  as: Tag = "a",
+  class: className,
+  href,
+  heading,
+  subheading,
+  imagePath,
+  altText,
+} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/*.{jpeg,jpg,png,gif}");
 if (!images[imagePath])
-	throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`)
+  throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
 
 <Tag

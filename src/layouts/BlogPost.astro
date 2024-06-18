@@ -1,25 +1,25 @@
 ---
-import type { CollectionEntry } from 'astro:content'
+import type { CollectionEntry } from "astro:content";
 
-import BlogHero from '@/components/blog/Hero.astro'
-import TOC from '@/components/blog/TOC.astro'
-import Button from '@/components/Button.astro'
+import Button from "@/components/Button.astro";
+import BlogHero from "@/components/blog/Hero.astro";
+import TOC from "@/components/blog/TOC.astro";
 
-import PageLayout from './BaseLayout.astro'
+import PageLayout from "./BaseLayout.astro";
 
 interface Props {
-	post: CollectionEntry<'post'>
+  post: CollectionEntry<"post">;
 }
 
-const { post } = Astro.props
+const { post } = Astro.props;
 const {
-	data: { description, ogImage, publishDate, title, updatedDate },
-	slug
-} = post
+  data: { description, ogImage, publishDate, title, updatedDate },
+  slug,
+} = post;
 
-const socialImage = ogImage ?? `/og-image/${slug}.png`
-const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString()
-const { headings } = await post.render()
+const _socialImage = ogImage ?? `/og-image/${slug}.png`;
+const _articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
+const { headings } = await post.render();
 ---
 
 <PageLayout meta={{ articleDate, description, ogImage: socialImage, title }}>
