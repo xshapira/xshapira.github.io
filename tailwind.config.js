@@ -26,7 +26,10 @@ const config = {
       // 	},
       // },
       maxWidth: {
-        "2.5xl": "44rem",
+        "2.5xl": "43rem",
+      },
+      lineHeight: {
+        "extra-relaxed": "1.75",
       },
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
