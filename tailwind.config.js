@@ -25,6 +25,9 @@ const config = {
       // 		},
       // 	},
       // },
+      maxWidth: {
+        "2.5xl": "44rem",
+      },
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
         input: "hsl(var(--input) / <alpha-value>)",
