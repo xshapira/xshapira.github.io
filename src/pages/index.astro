@@ -62,26 +62,27 @@ const _allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
       </div>
     </section>
 
-    <Section title="About">
-      <p class="text-muted-foreground">
+    <div class="leading-extra-relaxed prose prose-base mx-auto max-w-2.5xl text-muted-foreground">
+      <p>
         I'm an early-bird Python dev who starts his day with a piping hot coffee and a good
         nonfiction book. I'm all about self-improvement, so I try to squeeze in some coding practice
         and a workout before my two little ones wake up and take over the house. Speaking of which,
         if you need any tips on coding with toddlers, hit me up - I've become a master at typing
         with one hand while holding a baby in the other.
       </p>
-    </Section>
+    </div>
+
     {
       _allPostsByDate.length > 0 && (
-        <Section title="Posts">
-          <ul class="flex flex-col gap-y-2">
+        <div>
+          <ul class="mx-auto max-w-2.5xl flex flex-col gap-y-2">
             {_allPostsByDate.map((p) => (
               <li class="flex flex-col gap-x-2 sm:flex-row">
                 <PostPreview post={p} />
               </li>
             ))}
           </ul>
-        </Section>
+        </div>
       )
     }
   </div>
