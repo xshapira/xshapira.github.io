@@ -17,14 +17,14 @@ export function generateToc(headings: ReadonlyArray<MarkdownHeading>) {
   const bodyHeadings = [...headings.filter(({ depth }) => depth > 1)];
   const toc: Array<TocItem> = [];
 
-  bodyHeadings.forEach((h) => {
+  for (const h of bodyHeadings) {
     const heading: TocItem = { ...h, subheadings: [] };
 
     // add h2 elements into the top level
     if (heading.depth === 2) {
       toc.push(heading);
     } else {
-      const lastItemInToc = toc[toc.length - 1]!;
+      const lastItemInToc = toc[toc.length - 1] ?? { depth: 0 };
       if (heading.depth < lastItemInToc.depth) {
         throw new Error(`Orphan heading found: ${heading.text}.`);
       }
@@ -35,6 +35,6 @@ export function generateToc(headings: ReadonlyArray<MarkdownHeading>) {
       const target = diveChildren(lastItemInToc, gap);
       target.push(heading);
     }
-  });
+  }
   return toc;
 }
