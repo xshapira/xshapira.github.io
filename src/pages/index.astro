@@ -8,7 +8,7 @@ import SkillLayout from "../components/SkillLayout.astro";
 import PageLayout from "../layouts/BaseLayout.astro";
 
 import { Image } from "astro:assets";
-import astro from "../assets/about-astro.png";
+import astro from "../assets/max.png";
 
 import { getAllPosts, sortMDByDate } from "@/utils";
 
@@ -20,12 +20,7 @@ const _allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 <PageLayout meta={{ title: "Home" }}>
   <div class="flex w-full flex-col gap-y-10">
     <section class="flex flex-col items-center gap-y-7">
-      <Image
-        src={astro}
-        alt="profile photo"
-        class="h-28 w-auto rounded-full bg-[#FFBE98] p-2"
-        loading="eager"
-      />
+      <Image src={astro} alt="profile photo" class="h-80 w-auto rounded-full p-2" loading="eager" />
 
       <div class="flex flex-col items-center gap-y-4">
         <h1 class="text-3xl font-bold">Max Shapira</h1>
