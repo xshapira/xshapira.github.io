@@ -32,6 +32,10 @@ export const menuLinks: Array<{ title: string; path: string }> = [
     title: "Blog",
     path: "/blog/",
   },
+  {
+    title: "Toolbox",
+    path: "/toolbox/",
+  },
 ];
 
 // https://expressive-code.com/reference/configuration/
