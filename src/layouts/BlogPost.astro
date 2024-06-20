@@ -40,7 +40,7 @@ const { headings } = await post.render();
       </svg>
     </Button>
     <div class="mt-8 gap-x-10 lg:flex lg:items-start">
-      <!-- {!!headings.length && <TOC headings={headings} />} -->
+      {!!headings.length && <TOC headings={headings} />}
       <article class="flex-grow break-words" data-pagefind-body>
         <div id="blog-hero"><BlogHero content={post} /></div>
         <div
