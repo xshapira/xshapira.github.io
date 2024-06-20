@@ -6,7 +6,7 @@ import type { GetStaticPaths, Page } from "astro";
 
 import Button from "@/components/Button.astro";
 import Pagination from "@/components/Paginator.astro";
-import PostPreview from "@/components/blog/PostPreview.astro";
+import PostPreview from "@/components/posts/PostPreview.astro";
 import PageLayout from "@/layouts/BaseLayout.astro";
 import { getAllPosts, getUniqueTags, sortMDByDate } from "@/utils";
 
@@ -54,7 +54,7 @@ const _paginationProps = {
 
 <PageLayout meta={_meta}>
   <div class="mx-auto max-w-2.5xl w-full">
-    <Button title="Back" href="/blog" style="button">
+    <Button title="Back" href="/posts" style="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="14"

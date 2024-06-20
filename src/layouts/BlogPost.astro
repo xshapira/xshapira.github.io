@@ -2,8 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 
 import Button from "@/components/Button.astro";
-import BlogHero from "@/components/blog/Hero.astro";
-import TOC from "@/components/blog/TOC.astro";
+import BlogHero from "@/components/posts/Hero.astro";
+import TOC from "@/components/posts/TOC.astro";
 
 import PageLayout from "./BaseLayout.astro";
 
@@ -24,7 +24,7 @@ const { headings } = await post.render();
 
 <PageLayout meta={{ articleDate, description, ogImage: _socialImage, title }}>
   <div class="mx-auto max-w-2.5xl w-full">
-    <Button title="Back" href="/blog" style="button">
+    <Button title="Back" href="/posts" style="button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="14"
