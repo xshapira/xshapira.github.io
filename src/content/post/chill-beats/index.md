@@ -2,6 +2,9 @@
 title: "chill beats to focus to"
 description: "Find your focus and get into the zone"
 publishDate: "31 May 2023"
+coverImage:
+  src: "./cover.png"
+  alt: "chill beats cover image"
 tags: ["productivity", "focus"]
 ---
 
