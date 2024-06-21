@@ -5,10 +5,10 @@ export const siteConfig: SiteConfig = {
   // Used as both a meta property (src/components/BaseHead.astro L:31 + L:49) & the generated satori png (src/pages/og-image/[slug].png.ts)
   author: "Max Shapira",
   // Meta property used to construct the meta title property, found in src/components/BaseHead.astro L:11
-  title: "Max Shapira Blog",
+  title: "Max Shapira - Code and Life",
   // Meta property used as the default description meta property
   description:
-    "Early-bird Python dev who codes, exercises, and reads before wrangling two toddlers. Fun fact: I can type with one hand while holding a baby in the other!",
+    "Early-bird Python developer who codes, exercises, and reads before wrangling two toddlers.",
   // HTML lang property, found in src/layouts/Base.astro L:18
   lang: "en-US",
   // Meta property, found in src/components/BaseHead.astro L:42
