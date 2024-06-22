@@ -10,7 +10,7 @@ tags: ["python", "ai"]
 
 Being a skilled developer requires a careful balance in this fast-paced AI era. You should refine your skills naturally while still leveraging AI. It's not easy, as it takes practice to ask the right questions and create a fresh perspective (if you're stuck in old habits). Let me share a few ideas for striking the right balance.
 
-## Use AI for Understanding, Not Just Answers
+## Use AI for understanding, not just answers
 
 When using AI assistants, it's important to prioritize learning over easy answers.
 
@@ -21,14 +21,14 @@ Instead of directly asking ChatGPT to answer a problem, ask it to explain the co
 **Bad**: "Write a function to sort a list in Python."
 **Good**: "Can you explain how sorting algorithms work?"
 
-## Break Down Your Problem
+## Break down your problem
 
 Tackling complex problems piece by piece can prevent over-reliance on AI. Break your problem into smaller parts and try to solve each yourself. If you get stuck, ask ChatGPT about that particular issue. This way, you won't depend on the AI for the whole solution, just help in a specific part.
 
 **Bad**: "I want to build a chat application. How do I do it?"
 **Good**: "I'm having trouble setting up WebSockets for real-time communication in my chat application. Can you explain how WebSockets work?"
 
-## Ask for Resources, Not Direct Solutions
+## Ask for resources, not direct solutions
 
 AI can help you find educational materials like documentation, articles, and tutorials.
 
@@ -39,7 +39,7 @@ For instance, ChatGPT can point you toward useful resources like documentation, 
 **Bad (overly broad)**: "How do I create a web API with FastAPI?"
 **Good**: "Can you recommend some good resources or tutorials to get started with FastAPI?"
 
-## Request Feedback
+## Request feedback
 
 Another approach is to get AI feedback on your own work.
 
@@ -50,7 +50,7 @@ Rather than having ChatGPT generate a solution for you, come up with one yoursel
 **Bad**: "Write a SQL query to get the total sales from this database."
 **Good**: "Here's my SQL query to calculate the total sales. Can you review it and suggest improvements?"
 
-## Use the Socratic Method
+## Use the Socratic method
 
 Chat with AI in an exploratory dialogue. Don't just get the answers; have a conversation to explore ideas further. Ask "why" often. This encourages better understanding.
 
@@ -63,7 +63,7 @@ Chat with AI in an exploratory dialogue. Don't just get the answers; have a conv
 
 Another example might be if you ask, '**How does a hash table work in Python?**' as opposed to just accepting the explanation, follow up with '**Why is hashing used?**' and '**How does hash table insertion improve lookup time complexity compared to a list?**'. Asking clarifying questions will lead you to gain a deeper understanding.
 
-## Self-Reflect Before Asking
+## Self-reflect before asking
 
 It's beneficial to reflect on your own process before using ChatGPT. Hence, take the time to explain the problem clearly, and consider it thoroughly.
 
@@ -77,7 +77,7 @@ Defining the problem can often help you find the answer.
 
 If you haven't found the answer after thinking it over, then your question for ChatGPT will be more specific and focused.
 
-## Reduce Frequency
+## Reduce frequency
 
 This part is hard, but you really want to be intentional about when you turn to AI. Set a personal rule for when you'll consult ChatGPT to help you stay persistent and build your problem-solving skills.
 
@@ -95,7 +95,7 @@ The exact minutes aren't important; get a decent mental workout, but don't burn 
 
 Finding the right timeframe takes some trial and error. If you frequently reach your time limit with no progress, extend it. If you rarely hit the limit, shorten it.
 
-## Real-World Example
+## Real-world example
 
 Jane was new to Python and Django. She was building a simple blog site and got stuck setting up the URL routes. Rather than asking ChatGPT to write the routes for her, she asked it to explain Django URL routing and show examples.
 
