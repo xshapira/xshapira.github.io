@@ -25,6 +25,31 @@ const config = {
       // 		},
       // 	},
       // },
+      typography(theme) {
+        return {
+          DEFAULT: {
+            css: {
+              "code::before": {
+                content: "none", // don’t generate the pseudo-element
+                //                content: '""', // this is an alternative: generate pseudo element using an empty string
+              },
+              "code::after": {
+                content: "none",
+              },
+              code: {
+                color: "#dcdcdc",
+                backgroundColor: "#2a2a2a",
+                fontWeight: "500",
+                borderRadius: theme("borderRadius.DEFAULT"),
+                paddingLeft: theme("spacing[1.5]"),
+                paddingRight: theme("spacing[1.5]"),
+                paddingTop: theme("spacing.1"),
+                paddingBottom: theme("spacing.1"),
+              },
+            },
+          },
+        };
+      },
       maxWidth: {
         "2.5xl": "43rem",
       },
