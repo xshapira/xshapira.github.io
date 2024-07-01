@@ -37,7 +37,7 @@ const config = {
                 content: "none",
               },
               code: {
-                color: "#dcdcdc",
+                color: "#dcd9d5",
                 backgroundColor: "#2a2a2a",
                 fontWeight: "500",
                 borderRadius: theme("borderRadius.DEFAULT"),
