@@ -38,7 +38,7 @@ const config = {
               },
               code: {
                 color: "#dcd9d5",
-                backgroundColor: "#2a2a2a",
+                backgroundColor: "#282828",
                 fontWeight: "500",
                 borderRadius: theme("borderRadius.DEFAULT"),
                 paddingLeft: theme("spacing[1.5]"),
