@@ -17,7 +17,7 @@ const {
 } = Astro.props;
 ---
 
-<html lang={siteConfig.lang} class="">
+<html transition:animate="none" lang={siteConfig.lang} class="">
   <head>
     <ViewTransitions />
     <BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
