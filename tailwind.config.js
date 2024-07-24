@@ -25,6 +25,12 @@ const config = {
       // 		},
       // 	},
       // },
+      height: {
+        550: "34.375rem",
+      },
+      width: {
+        410: "25.625rem",
+      },
       typography(theme) {
         return {
           DEFAULT: {
