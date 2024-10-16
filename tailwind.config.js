@@ -54,13 +54,18 @@ const config = {
               },
             },
           },
+          lg: {
+            css: {
+              fontSize: "1.0625rem",
+            },
+          },
         };
       },
       maxWidth: {
         "2.5xl": "43rem",
       },
       lineHeight: {
-        "extra-relaxed": "1.75",
+        "extra-relaxed": "1.875rem",
       },
       colors: {
         border: "hsl(var(--border) / <alpha-value>)",
